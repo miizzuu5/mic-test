@@ -5,6 +5,18 @@
  <link>https://aa-aa-mic-test.neocities.org</link>
  <description>a personal site made with love, by mizu</description>
  <item>
+  <title>New in homepage: fake ads</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage/</link>
+  <description>can you tell I'm running out of ideas</description>
+  <pubDate>Fri, 13 Mar 26 21:26:00 +0200</pubDate>
+ </item>
+ <item>
+  <title>New in homepage: fanlistings</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage#fanlists</link>
+  <description>FANLISTS !!</description>
+  <pubDate>Thu, 08 Jan 26 17:48:00 +0200</pubDate>
+ </item>
+ <item>
   <title>New in homepage: sudoku anddd nonogram widgets</title>
   <link>https://aa-aa-mic-test.neocities.org/homepage</link>
   <description>Added new widgets to right sidebar (sudoku and nonogram) instead of the quiz section pluss two new webrings</description>
@@ -12,7 +24,7 @@
  </item>
  <item>
   <title>New in homepage: status.cafe widget</title>
-  <link>https://aa-aa-mic-test.neocities.org/homepage</link>
+  <link>https://aa-aa-mic-test.neocities.org/homepage#status</link>
   <description>Added a new section on the left sidebar (status.cafe widget) plus some minor changes to the site</description>
   <pubDate>Tue, 28 Oct 25 12:42:00 +0200</pubDate>
  </item>
