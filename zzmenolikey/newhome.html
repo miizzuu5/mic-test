@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- hey you! whatchu doing here?! there's nothing to look at -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rag doll swag :fire:</title>
+  <link href="/meow.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://electric-tenshi.nekoweb.org/vocaring/vocaring.css">
+  <link rel="icon" type="image/x-icon" href="/Pixels/favicon.ico.gif" alt="">
+  <script src="js-idk/jquery.min.js"></script>
+  <script src="js-idk/glenplayer02.js"></script>
+  <script src="https://kit.fontawesome.com/8119dfca45.js" crossorigin="anonymous"></script>
+  <style>
+   @font-face{
+   font-family: "music";
+   src: url(https://cdn.glitch.me/9bbfdfb3-4bfa-4c39-8743-5621c8b9df21/LL_RECOR.TTF);
+   }
+   @font-face{
+   font-family: 'Alehna';
+   src: url(Fonts/Alehna/alehna-webfont.woff);
+   }
+   @font-face{
+   font-family: 'Halo Dek';
+   src: url(Fonts/Halo-dek/halo_dek-webfont.woff);
+   }
+   ::-webkit-scrollbar{width: 8px;}
+   ::-webkit-scrollbar-track{background: #302928; border: hidden; border-radius: 2px;}
+   ::-webkit-scrollbar-thumb{background: #5e1510; border: hidden; border-radius: 7px;}
+   ::-webkit-scrollbar-thumb:hover{background: #8A0E02}
+   .scroll-blue::-webkit-scrollbar{width: 8px;}
+   .scroll-blue::-webkit-scrollbar-track{background: #643016; border: hidden; border-radius: 2px;}
+   .scroll-blue::-webkit-scrollbar-thumb{background: #e4b047; border: hidden; border-radius: 7px;}
+   .scroll-blue::-webkit-scrollbar-thumb:hover{background: #c39d52}
+   html{
+    background-image: url(Backgrounds/black.png);
+    color: #FFFEF2;
+    line-height: 26px;
+    font-family: Alehna;
+    letter-spacing: 1.1px;
+   }
+   body{
+    display: grid;
+    grid-template-areas:
+     "left main right";
+    grid-template-columns: 1fr 2fr 1fr;
+   }
+   #left{grid-area: left; z-index: 2;}
+   main{grid-area: main; z-index: 1;}
+   #right{grid-area: right; z-index: 3;}
+   #bgmusic{z-index: 4;}
+   main{
+    width: 585px;
+    height: fit-content;
+    margin: 40px auto 75px auto;
+    padding: 50px 30px 25px 35px;
+    border: 30px solid transparent;
+    border-image: url('Decoration/red-lace.png') 34 round;
+   }
+   .line{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+   }
+   .divide{
+    width: 600px;
+    margin: 25px auto 25px auto;
+   }
+  </style>
+ </head>
+ <body>
+  <main>
+   <div class="line">
+    <p>"The weather is a segment of the Night Vale Community Radio show hosted by Cecil Palmer. In the Welcome to Night Vale universe, the weather is actually music" so here's my current weather:</p>
+    <div style="margin-bottom: -170px;">
+     <a href="https://youtu.be/1cDdBr4AxU8?si=ZklLxRO0xZeUxiEo" target="_blank" title="weather song, currently Le Ciel by Malice Mizer"><img src="Decoration/leciel.png" style="width: 146px;" alt="album cover" aria-hidden="true"></a>
+     <p style="text-align: center; color: #f5dbd9; margin-top: 30px;"><b>Le Ciel - Malice Mizer</b><br><small style="color: #c6c6bb; position: relative; bottom: 7px;">*click on album cover !!</small></p>
+     <img src="Decoration/red-tv.png" style="height: 150px; position: relative; bottom: 230px; right: 16px;" alt="decorative red TV, contains album cover">
+    </div>
+   </div>
+   <div>
+    <p>For more music, you have the option to listen to some background music while you're on this page (music player, bottom left)</p><p>As previously mentioned, I'm Mizu ^^ I'm still not entirely sure what I'd like to be sharing on this website, but I think it'll be all personal stuff so I hope you'd enjoy getting to know a random stranger online better lol <img src="Pixels/jumpykuromi.gif" alt="(jumping kuromi pixel)" aria-hidden="true"><br>I still have a lot to work on but there is a few completed pages;</p>
+   </div>
+   <nav style="text-align: center; width: 625px; padding-top: 35px; position: relative; right: 20px;">
+    <h1 style="font-family: Halo Dek; letter-spacing: 5px; font-weight: normal; font-size: 2.1rem; text-decoration: double; text-decoration-style: wavy; color: #b53326;">Navigate thru site</h1>
+    <div id="exc" aria-hidden="true" style="position: relative; bottom: 120px;"><p id="exc-left" style="font-family: Halo Dek; font-size: 3.7rem; color: #b53326; position: relative; right: 280px; top: 10px;">!!</p><p id="exc-right" aria-hidden="true" style="font-family: Halo Dek; font-size: 3.7rem; color: #b53326; position: relative; left: 280px; bottom: 10px;">!!</p></div>
+    <div id="acc-nav" style="margin-top: -205px;">
+     <h4 style="font-family: Alehna; font-weight: normal; font-size: smaller; line-height: 10px; letter-spacing: 1.1px;">note: more coming soonnn!!</h4>
+     <!-- replace note with: Make yourself at home -->
+     <div style="word-spacing: 7px;">
+     <!-- <a href="">more about me,</a> -->
+     <a href="yapp.html">diary,</a>
+     <a href="linkss.html">links</a>
+     <!-- other ideas: shrines -->
+     <br>
+     <!-- <a href="">site map</a> -->
+     </div>
+    </div>
+   </nav>
+   <div style="width: 625px; text-align: center; position: relative; right: 20px;">
+    <img class="divide" src="Decoration/divider-angel.png" alt="">
+    <div id="stamps">
+     <img src="Stamps/static.gif" style="height: 54px;" alt="miku stamp" aria-hidden="true">
+     <img src="Stamps/popipo.png" alt="miku stamp" aria-hidden="true">
+     <img src="Stamps/gumi(1).gif" alt="gumi stamp" aria-hidden="true">
+     <img src="Stamps/gumi.gif" alt="gumi stamp" aria-hidden="true">
+     <img src="Stamps/gumi(2).gif" alt="gumi stamp" aria-hidden="true">
+     <img src="Stamps/teto.gif" style="height: 54px;" alt="teto stamp" aria-hidden="true">
+     <img src="Stamps/miku.gif" alt="miku stamp" aria-hidden="true">
+     <img src="Stamps/miku(1).gif" alt="miku stamp" aria-hidden="true">
+     <img src="Stamps/echo.gif" alt="Echo by Crusher P stamp" aria-hidden="true">
+     <img src="Stamps/emu.gif" alt="emu stamp" aria-hidden="true">
+     <img src="Stamps/mizuki.gif" style="height: 54px;" alt="mizuki stamp" aria-hidden="true">
+     <img src="Stamps/kuromi.png" alt="kuromi stamp" aria-hidden="true">
+     <img src="Stamps/melody.png" alt="melody stamp" aria-hidden="true">
+     <img src="Stamps/kuromi(1).gif" alt="kuromi stamp" aria-hidden="true">
+     <img src="Stamps/popplio.gif" alt="popplio stamp" aria-hidden="true">
+     <img src="Stamps/steven.gif" alt="steven universe stamp" aria-hidden="true">
+     <img src="Stamps/tawog.gif" alt="the amazing world of gumball stamp" aria-hidden="true">
+     <img src="Stamps/milk.gif" alt="i love milk stamp" aria-hidden="true">
+     <img src="Stamps/choc.gif" alt="people like chocolate stamp" aria-hidden="true">
+     <img src="Stamps/pizza.png" alt="i support pizza stamp" aria-hidden="true">
+     <img src="Stamps/loss.gif" alt="loss meme stamp" aria-hidden="true">
+     <img src="Stamps/kaomoji.png" alt="kaomoji stamp" aria-hidden="true">
+     <img src="Stamps/emoticons.gif" alt="emoticons stamp" aria-hidden="true">
+     <img src="Stamps/yay.gif" alt="yay emoticon stamp" aria-hidden="true">
+     <img src="Stamps/stars.png" alt="glow stars stamp" aria-hidden="true">
+     <img src="Stamps/aaaaaa.gif" alt="AaaaAAAAAa stamp" aria-hidden="true">
+     <img src="Stamps/plush.png" alt="i still sleep with plushies stamp" aria-hidden="true">
+     <img src="Stamps/paper.gif" alt="i still use paper stamp" aria-hidden="true">
+     <img src="Stamps/silly.png" alt="yeah im silly stamp" aria-hidden="true">
+     <img src="Stamps/typos.gif" alt="i make typos stamp" aria-hidden="true">
+     <img src="Stamps/gender.png" alt="gender??????? stamp" aria-hidden="true">
+     <img src="Stamps/piracyiscool.gif" alt="piracy is cool stamp" aria-hidden="true">
+     <img src="Stamps/cringedead.png" alt="cringe is dead stamp" aria-hidden="true">
+     <img src="Stamps/slow.gif" alt="slow internet pisses me off stamp" aria-hidden="true">
+     <img src="Stamps/flipped.png" alt="sideway stamp" aria-hidden="true">
+     <img src="Stamps/wiggly.png" alt="wiggly stamp" aria-hidden="true">
+     <img src="Stamps/squiggle.gif" alt="squiggle on a stamp stamp" aria-hidden="true">
+    </div>
+    <div id="blinkies">
+     <img src="Blinkies/imissmywifetails.gif" alt="i miss my wife tails blinkie" aria-hidden="true">
+     <img src="Blinkies/crochet.gif" style="height: 21px;" alt="hip to crochet blinkie" aria-hidden="true">
+     <a href="https://boycott.thewitness.news/target/oreo" target="_blank" aria-hidden="true"><img src="Blinkies/oreo.gif" alt="oreos" aria-hidden="true"></a>
+     <img src="Blinkies/him.gif" alt="he/him blinkie" aria-hidden="true">
+     <img src="Blinkies/sanrio.gif" alt="sanrio blinkie" aria-hidden="true">
+     <img src="Blinkies/catperson.gif" alt="im a cat person blinkie" aria-hidden="true">
+     <img src="Blinkies/genders.gif" alt="there are 0 genders!! blinkie" aria-hidden="true">
+     <img src="Blinkies/math.gif" alt="math nerd blinkie" aria-hidden="true">
+     <img src="Blinkies/wtnv.gif" alt="welome to night vale blinkie" aria-hidden="true">
+     <img src="Blinkies/emoticons.gif" alt="emoticons blinkie" aria-hidden="true">
+     <img src="Blinkies/fakepng.webp" alt="i hate fake pngs blinkie" aria-hidden="true">
+     <img src="Blinkies/mamamia.gif" alt="mamma mia blinkie" aria-hidden="true">
+     <img src="Blinkies/dablinkie.gif" alt="dablinkies?! da vinki twins blinkie" aria-hidden="true">
+     <img src="Blinkies/lasagna.gif" alt="do you have any lasagna? garfeild blinkie" aria-hidden="true">
+     <img src="Blinkies/triplebaka.gif" alt="triple baka blinkie" aria-hidden="true">
+     <img src="Blinkies/faggot.gif" alt="faggot blinkie" aria-hidden="true">
+     <img src="Blinkies/sheese.gif" alt="cheese rocks blinkie" aria-hidden="true">
+     <img src="Blinkies/inprogress.gif" alt="site in progress blinkie" aria-hidden="true">
+     <img src="Blinkies/silly.gif" alt="born to be silly blinkie" aria-hidden="true">
+     <img src="Blinkies/vampires.webp" style="width: 150px;" alt="vampires will never hurt you blinkie" aria-hidden="true">
+    </div>
+    <div id="buttons" style="width: 570px;">
+     <img src="Buttons/dvd.gif" style="height: 31px;" alt="bouncing dvd button" aria-hidden="true">
+     <img src="Buttons/nyancat.gif" alt="nyan cat button" aria-hidden="true">
+     <img src="Buttons/sega-elite.gif" alt="Sega elite button" aria-hidden="true">
+     <img src="Buttons/shadow.jpg" style="height: 31px;" alt="shadow the hedgehog game button" aria-hidden="true">
+     <img src="Buttons/mesmiku.gif" alt="mesmerizer miku button" aria-hidden="true">
+     <img src="Buttons/mesteto.gif" alt="mesmerizer teto button" aria-hidden="true">
+     <img src="Buttons/approved.gif" alt="miku approved site button" aria-hidden="true">
+     <img src="Buttons/vocaloid.jpg" alt="vocaloid now! button" aria-hidden="true">
+     <a href="https://hodgepodgeaudio.com/#bodycode" target="_blank" aria-hidden="true"><img src="Buttons/fua.png" style="height: 31px;" alt="body code based on the podcast SCP Find Us Alive that says 'i love my wife', made by me, button" aria-hidden="true"></a>
+     <img src="Buttons/badapple.gif" alt="bad apple button" aria-hidden="true">
+     <img src="Buttons/ringdingdong.gif" alt="Ring Ding Dong by Shinee button" aria-hidden="true">
+     <img src="Buttons/queer.png" alt="you're telling me a queer coded this? button" aria-hidden="true">
+     <img src="Buttons/bestviewedondesktop.gif" alt="best viewed on desktop button" aria-hidden="true">
+     <img src="Buttons/chrome.gif" alt="viewed with chrome button" aria-hidden="true">
+     <a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank" aria-hidden="true"><img src="Buttons/freepalestine.gif" alt="free palestine now button" aria-hidden="false"></a>
+     <img src="Buttons/neocities.gif" alt="neocities button" aria-hidden="true">
+     <img src="Buttons/css.gif" alt="css is difficult button" aria-hidden="true">
+     <img src="Buttons/handcoded.gif" alt="completely hand coded button" aria-hidden="true">
+    </div>
+    <!-- note -->
+    <p style="font-size: small; line-height: 20px;">note: even though there's an oreo blinkie for decoration above, I do not support buying boycotted products.</p>
+   </div>
+   <div id="guestbook" style="position: relative; right: 15px;">
+   <img class="divide" src="Decoration/divider-angel.png" alt="">
+   <iframe src="https://miizzuuu.atabook.org/" title="guestbook" style="width: 600px; height: 661px;" aria-hidden="true"></iframe>
+    <div style="display: flex; flex-wrap: wrap; gap: 1.1rem;">
+     <p style="line-height: normal">Having trouble with guestbook above? Try a</p><a target="_blank" href="https://miizzuuu.atabook.org/" style="line-height: normal; position: relative; top: 19px; right: 10px;">direct link<img src="Decoration/newtab.webp" style="width: 15px; filter: invert(100%); position: relative; bottom: 7px;"></a>
+    </div>
+   </div>
+   <img src="Decoration/mizuena(1).png" style="width: 127px;" alt="mizuki and ena" aria-hidden="true">
+  </main>
+ </body>
+</html>

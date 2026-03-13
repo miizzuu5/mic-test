@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>Title</title>
+ </head>
+ <body>
+ <div id="app" style="height: 100vh">
+  <!-- Webamp will attempt to center itself within this div -->
+  </div>
+  <script type="module">
+    import Webamp from "https://unpkg.com/webamp@^2";
+    const webamp = new Webamp({
+     initialTracks: [
+      {
+       metaData: {
+        artist: "NASTYONA",
+        title: "이렇게 (ireoke)",
+       },
+       url: "https://files.catbox.moe/rmbb8s.mp3",
+      }]
+     });
+     
+    // Returns a promise indicating when it's done loading.
+    webamp.renderWhenReady(document.getElementById("app"));
+  </script>
+ </body>
+</html>

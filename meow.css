@@ -1,0 +1,21 @@
+body{
+ font-family: 'Alehna';
+ letter-spacing: 1.1px;
+ font-size: 20px;
+}
+a:link{
+ color: #8A0E02;
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: #8A0E02;
+}
+a:visited{
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: #c6c6bb;
+ color: #c6c6bb;
+}
+a:hover{
+ text-decoration: none;
+ color: #FFFEF2;
+}

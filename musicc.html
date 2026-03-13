@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <!-- hey you! whatchu doing here?! there's nothing to look at -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Musicc  ☆</title>
+   <link rel="icon" type="image/x-icon" href="/Pixels/music-favicon.ico">
+   <style>
+    body{
+     background-image: url(Backgrounds/black.png);
+     color: white;
+    }
+    #yona, #vocaloid{
+     height: 100vh;
+    }
+   </style>
+ </head>
+ <body>
+  <p>*songs without a playtime in front of them are either still loading or no longer available</p>
+  <section>
+   <div id="yona">
+    <script src="https://unpkg.com/webamp"></script>
+   </div>
+   <script type="module">
+    import Webamp from "https://unpkg.com/webamp@^2";
+    const webamp1 = new Webamp({
+      initialTracks: [
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "이렇게 (ireoke)",
+          },
+          url: "https://files.catbox.moe/rmbb8s.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Good Night My Brother",
+          },
+          url: "https://files.catbox.moe/n5t802.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Nine Moods",
+          },
+          url: "https://files.catbox.moe/v5tx1m.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Ceaseless, Night",
+          },
+          url: "https://files.catbox.moe/bahoiw.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Tete",
+          },
+          url: "https://files.catbox.moe/yqspsv.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Judith",
+          },
+          url: "https://files.catbox.moe/ymdpfz.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Jordan River",
+          },
+          url: "https://files.catbox.moe/8yl6gm.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "To My Grandfather",
+          },
+          url: "https://files.catbox.moe/ng074r.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "In My Dreams",
+          },
+          url: "https://files.catbox.moe/v83qjz.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Till You Fall Asleep",
+          },
+          url: "https://files.catbox.moe/l66yty.mp3",
+        },
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Embrace",
+          },
+          url: "https://files.catbox.moe/mrl2oa.mp3",
+        },
+      ],
+    
+    initialSkin: {
+        url: "webamp-skins/D-A-S-H-a-m-p_by_Fred_Mitchell.wsz"
+    },});
+
+    webamp1.renderWhenReady(document.getElementById("yona"));
+  </script>
+  </section>
+  <section>
+   <div id="vocaloid">
+    <script src="https://unpkg.com/webamp"></script>
+   </div>
+   <script type="module">
+    import Webamp from "https://unpkg.com/webamp@^2";
+    const webamp2 = new Webamp({
+      initialTracks: [
+       {
+          metaData: {
+            artist: "ARTIST",
+            title: "SONG",
+          },
+          url: "LINK",
+        },
+      ],
+    
+    initialSkin: {
+        url: "webamp-skins/tetoplayer.wsz"
+    },});
+
+    webamp2.renderWhenReady(document.getElementById("vocaloid"));
+    </script>
+   </section>
+  <section></section>
+ </body>
+</html>

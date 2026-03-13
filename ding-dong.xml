@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+ <title>mizu's feed</title>
+ <link>https://aa-aa-mic-test.neocities.org</link>
+ <description>a personal site made with love, by mizu</description>
+ <item>
+  <title>New in homepage: sudoku anddd nonogram widgets</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage</link>
+  <description>Added new widgets to right sidebar (sudoku and nonogram) instead of the quiz section pluss two new webrings</description>
+  <pubDate>Tue, 06 Jan 26 17:01:00 +0200</pubDate>
+ </item>
+ <item>
+  <title>New in homepage: status.cafe widget</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage</link>
+  <description>Added a new section on the left sidebar (status.cafe widget) plus some minor changes to the site</description>
+  <pubDate>Tue, 28 Oct 25 12:42:00 +0200</pubDate>
+ </item>
+ <item>
+  <title>New diary entry</title>
+  <link>https://aa-aa-mic-test.neocities.org/yapp</link>
+  <description>Added a new entry plus slight changed to the diary page intself (new lace border, new 'toggle animation' button)</description>
+  <pubDate>Sun, 28 Sep 25 12:53:00 +0200</pubDate>
+ </item>
+ <item>
+  <title>New section in homepage; quiz results</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage</link>
+  <description>Added a little thing on the left for personality quiz results</description>
+  <pubDate>Wed, 15 Sep 25 00:24:00 +0200</pubDate>
+ </item>
+ <item>
+  <title>Weather change, minor edits (index/homepage/links)</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage</link>
+  <description>Weather song changed, some color changed, added a (pending) webring, 3 new links added to the linkss.html page</description>
+  <pubDate>Wed, 10 Sep 25 20:20:00 +0200</pubDate>
+ </item>
+ <item>
+  <title>Webring ^^</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage</link>
+  <description>Added a webring section in the homepage and joined the vocaloid webring</description>
+  <pubDate>Fri, 05 Sep 25 16:40:00 +0200</pubDate>
+ </item>
+ <item>
+  <title>Update log created!!</title>
+  <link>https://aa-aa-mic-test.neocities.org/homepage</link>
+  <description>Starting to record updates</description>
+  <pubDate>Fri, 05 Sep 25 02:01:00 +0200</pubDate>
+ </item>
+</channel>
+</rss>

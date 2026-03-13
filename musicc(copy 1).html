@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <!-- hey you! whatchu doing here?! there's nothing to look at -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Musicc  ☆</title>
+   <link rel="icon" type="image/x-icon" href="/Pixels/music-favicon.ico">
+   <script src="https://unpkg.com/webamp"></script>
+   <style>
+    body{
+     background-image: url(Backgrounds/black.png);
+     color: white;
+    }
+    .player{
+     height: 100vh;
+    }
+   </style>
+ </head>
+ <body>
+  <p>*songs without a playtime showing up are either still loading or no longer available</p>
+   <div id="yona" class="player"></div>
+   <div id="vocaloid" class="player"></div>
+   <script type="module">
+    import Webamp from "https://unpkg.com/webamp@^2";
+    
+    const webamp1 = new Webamp({
+      initialTracks: [
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Embrace",
+          },
+          url: "https://files.catbox.moe/mrl2oa.mp3",
+        },],
+    });
+    await webamp1.renderWhenReady(document.getElementById("yona"));
+    
+    
+    const webamp2 = new Webamp({
+      initialTracks: [
+        {
+          metaData: {
+            artist: "NASTYONA",
+            title: "Till You Fall Asleep",
+          },
+          url: "https://files.catbox.moe/l66yty.mp3",
+        },],
+    });
+    await webamp2.renderWhenReady(document.getElementById("vocaloid"));
+   </script>   
+   
+   <link rel="stylesheet" href="webamp-skins/D-A-S-H-a-m-p.css"> 
+   <!-- <link rel="stylesheet" href="webamp-skins/tetoplayer.css"> -->
+ </body>
+</html>

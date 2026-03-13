@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <!-- hey you! whatchu doing here?! there's nothing to look at -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rag doll swag :fire:</title>
+    <link href="/meow.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://electric-tenshi.nekoweb.org/vocaring/vocaring.css">
+    <link rel="icon" type="image/x-icon" href="/Pixels/favicon.ico.gif" alt="">
+    <script src="js-idk/jquery.min.js"></script>
+    <script src="js-idk/glenplayer02.js"></script>
+    <script src="https://kit.fontawesome.com/8119dfca45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://epiccity.nekoweb.org/ring//onionring - small.css">
+    <style>
+     @font-face{
+     font-family: "music";
+     src: url(Fonts/Music/ll_recor-webfont.woff);
+     }
+     @font-face{
+     font-family: 'Alehna';
+     src: url(Fonts/Alehna/alehna-webfont.woff);
+     }
+     @font-face{
+     font-family: 'Halo Dek';
+     src: url(Fonts/Halo-dek/halo_dek-webfont.woff);
+     }
+     ::-webkit-scrollbar{width: 8px;}
+     ::-webkit-scrollbar-track{background: #302928; border: hidden; border-radius: 2px;}
+     ::-webkit-scrollbar-thumb{background: #5e1510; border: hidden; border-radius: 7px;}
+     ::-webkit-scrollbar-thumb:hover{background: #8A0E02}
+     .scroll-blue::-webkit-scrollbar{width: 8px;}
+     .scroll-blue::-webkit-scrollbar-track{background: #643016; border: hidden; border-radius: 2px;}
+     .scroll-blue::-webkit-scrollbar-thumb{background: #e4b047; border: hidden; border-radius: 7px;}
+     .scroll-blue::-webkit-scrollbar-thumb:hover{background: #c39d52}
+     html{
+      background-image: url(Backgrounds/black.png);
+      color: #FFFEF2;
+      line-height: 26px;
+      font-family: Alehna;
+      letter-spacing: 1.1px;
+     }
+     body{
+      padding-bottom: 50px;
+      display: grid;
+      grid-template-areas:
+       "left main right";
+      grid-template-columns: 1fr 2fr 1fr;
+     }
+     #left{grid-area: left; z-index: 2;}
+      main{grid-area: main; z-index: 1;}
+      #right{grid-area: right; z-index: 3;}
+      #bgmusic{z-index: 4;
+     }
+     main{
+      scale: 0.9;
+      margin: -75px auto -70px auto;
+      width: 650px;
+      border: 30px solid transparent;
+      border-image: url('Decoration/red-lace.png') 34 round;
+      padding: 25px 30px 25px 35px;
+      display: grid;
+      grid-template-columns: 440px 210px;
+      grid-template-rows: repeat(11, 80px);
+      gap: 12px;
+     }
+     .idkk{
+      margin-left: 14px;
+     }
+     #right{
+      position: relative;
+      left: -10px;
+     }
+     #left{
+      position: relative;
+      right: -20px;
+     }
+     .yap, nav, #yummy{
+      margin-top: 30px;
+     }
+     .explain{
+      grid-row-start: row1-start;
+      grid-row: span 2;
+      grid-column-start: auto;
+      grid-column: span 1;
+     }
+     .weather{
+      grid-row-start: row1-start;
+      grid-row: span 2;
+      grid-column-start: auto;
+      grid-column: span 1;
+     }
+     .yap{
+      grid-row-start: row3-start;
+      grid-row: span 2;
+      grid-column-start: auto;
+      grid-column: span 2;
+     }
+     nav{
+      grid-row-start: row5-start;
+      grid-row: span 2;
+      grid-column-start: auto;
+      grid-column: span 2;
+     }
+     nav a{
+      font-size: 1.5rem;
+     }
+     #exc-left{
+      animation: exc-left 1.5s infinite step-start;
+     }
+     @keyframes exc-left {
+      0% {transform: rotate(0deg)}
+      25% {transform: rotate(15deg)}
+      50% {transform: rotate(0deg)}
+      75% {transform: rotate(-15deg)}
+      100% {transform: rotate(0deg)}
+     }
+     #exc-right{
+      animation: exc-right 1.5s infinite step-start;
+     }
+     @keyframes exc-right {
+      0% {transform: rotate(0deg)}
+      25% {transform: rotate(-15deg)}
+      50% {transform: rotate(0deg)}
+      75% {transform: rotate(15deg)}
+      100% {transform: rotate(0deg)}
+     }
+     #yummy{
+      grid-row-start: row7-start;
+      grid-row: span 1;
+      grid-column-start: auto;
+      grid-column: span 2;
+     }
+     #guestbook{
+      margin-top: 30px;
+      grid-row-start: row9-start;
+      grid-column-start: auto;
+      grid-column: span 2;
+      margin-left: 20px;
+     }
+     #guestbook a:link{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     #guestbook a:visited{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     #guestbook a:hover{
+     text-decoration: none;
+     color: #b0afa6;
+     }
+     #updates{
+      background-color: rgba(255, 204, 102, 0.05);
+      border: dashed #e0692d;
+      border-right: none;
+      color: #FFFEF2;
+      margin: 0px auto auto auto;
+      width: 220px;
+      min-width: 220px;
+      height: 210px;
+      max-height: 210px;
+      padding: 6px;
+      overflow-y: scroll;
+     }
+     #updates a{
+      font-size: 0.88rem;
+     }
+     #updates a:link{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     #updates a:visited{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     #updates a:hover{
+     text-decoration: none;
+     color: #b0afa6;
+     }
+     #updates p{
+      margin-top: -20px;
+      margin-bottom: 30px;
+      font-size: 0.88rem;
+      color: #b0afa6;
+     }
+     #updates h5{
+      font-size: 1.13rem;
+     }
+     #status{
+      overflow: auto;
+      margin-top: 450px;
+      height: 200px;
+      max-width: fit-content;
+      padding: 9px;
+      background-color: rgba(255, 204, 102, 0.05);
+      border: 1px solid #70191d;
+      border-right: none;
+      font-size: 0.8em;
+      text-align: left;
+     }
+     #status p{
+      font-size: 0.7em;
+     }
+     #status a:link{
+      color: #bc8a84;
+      text-decoration: none;
+     }
+     #status a:visited{
+      color: #bc8a84;
+      text-decoration: none;
+     }
+     #status a:hover{
+      text-decoration: none;
+      color: #e5e5f0;
+     }
+     #weather-history::-webkit-scrollbar{width: 8px;}
+     #weather-history::-webkit-scrollbar-track{background: #997c79; border: hidden; border-radius: 2px;}
+     #weather-history::-webkit-scrollbar-thumb{background: #8A0E02; border: hidden; border-radius: 7px;}
+     #weather-history::-webkit-scrollbar-thumb:hover{background: #543836}
+     #weather-history{
+      padding-top: 10px;
+      padding-left: 5px;
+      font-family: Alehna;
+      letter-spacing: 1.1px;
+      color: #FFFEF2;
+      line-height: normal;
+     }
+     #weather-history li{
+      width: fit-content;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+     }
+     #weather-history mark{
+      font-size: 1.2rem;
+      color: #FFFEF2;
+      background-color: rgba(138, 14, 2, 0.48);
+     }
+     #webrings p{
+      text-decoration: double underline; 
+     }
+     #rhythmring-img{
+      content: url("https://maddycha.com/rhythm-ring/imgs/widget/g3.png") !important;
+     }
+     #heaven{
+      background-color: rgba(255, 255, 255, 0.28);
+     }
+     #transmasc_ring a:link{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     #transmasc_ring a:visited{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     #transmasc_ring a:hover{
+     text-decoration: none;
+     color: #b0afa6;
+     }
+     .webWidget6 a:link{
+     color: #FFFEF2;
+     text-decoration: none;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     .webWidget6 a:visited{
+     color: #FFFEF2;
+     text-decoration: none;
+     text-decoration-style: wavy;
+     text-decoration-color: #FFFEF2;
+     }
+     .webWidget6 a:hover{
+     text-decoration: none;
+     color: #b0afa6;
+     }
+     #heaven{
+     background: rgba(255, 255, 255, 0.28);
+     border-radius: 5px;
+     }
+     #sillyringg p{
+      text-decoration: none;
+     }
+     #sillyringg a:link{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: none;
+     text-decoration-color: #FFFEF2;
+     }
+     #sillyringg a:visited{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: none;
+     text-decoration-color: #FFFEF2;
+     }
+     #sillyringg a:hover{
+     text-decoration: none;
+     color: #b0afa6;
+     }
+     #goth-music a:link{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: none;
+     text-decoration-color: #FFFEF2;
+     }
+     #goth-music a:visited{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: none;
+     text-decoration-color: #FFFEF2;
+     }
+     #goth-music a:hover{
+     text-decoration: none;
+     color: #b0afa6;
+     }
+     #cliques{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 1px;
+      width: 210px;
+     }
+     #cliques a, #cliques img{
+      height: fit-content;
+     }
+     #text{
+      text-align: center;
+     }
+   #bgmusic{
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+   }
+   #glenplayer02{
+   position: relative;
+   display: flex;
+   background: #FFFEF2;
+   padding: 0.2em;
+   border: 3px solid;
+   border-style: inset;
+   margin: auto;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   width: 15em;
+   }
+   #glenplayer02 a{
+   text-decoration: none;
+   }
+   #glenplayer02 > div{
+   align-self: center;
+   -webkit-align-self: center;
+   }
+   .music-controls{
+   user-select: none;
+   -webkit-user-select: none;
+   width: 13px;
+   font-size: 18px;
+   cursor: pointer;
+   font-family: "music";
+   }
+   .playy, .pausee{
+   font-family: "music";
+   font-size: 1.1em;
+   color: #8A0E02;
+   -webkit-text-stroke: 0.5px #000;
+   margin-top: -0.2em;
+   margin-bottom: 0.1em;
+   }
+   .pausee{
+   display: none;
+   }
+   .sonata{
+   letter-spacing: 1px;
+   margin-left: 0.4em;
+   font-size: 0.75em;
+   color: #000;
+   }
+   .labeltext{
+   margin-left: 0.5em;
+   position: relative;
+   bottom: 0.1em;
+   font-size: 14px;
+   }
+    </style>
+   </head>
+   <body>
+    <main>
+     <div class="explain">
+      <p style="position: relative; top: 17px;">"The weather is a segment of the Night Vale Community Radio show hosted by Cecil Palmer. In the Welcome to Night Vale universe, the weather is actually music" so here's my current weather:</p>
+     </div>
+     <div class="weather">
+      <img src="Decoration/red-tv.png" style="height: 150px;" alt="decorative red TV, contains album cover">
+      <a href="https://youtu.be/hyTLhfXe8FI?si=l0Nu-daLJU4MDD1T" target="_blank" title="weather song, currently Like This by Nastyona"><img src="Decoration/likethis.png" style="width: 146px; position: relative; bottom: 143px; left: 14px;" alt="album cover" aria-hidden="true"></a>
+      <p style="position: relative; bottom: 135px; width: 220px; text-align: center; color: #f5dbd9;"><b>Like this (이렇게) - Nastyona</b><br><small style="color: #c6c6bb; position: relative; bottom: 7px;">*click on album cover !!</small></p>
+     </div>
+     <div class="yap">
+      <p>For more music, you have the option to listen to some background music while you're on this page (music player, bottom left)</p><p>As previously mentioned, I'm Mizu ^^ I'm still not entirely sure what I'd like to be sharing on this website, but I think it'll be all personal stuff so I hope you'd enjoy getting to know a random stranger online better lol <img src="Pixels/jumpykuromi.gif" alt="(jumping kuromi pixel)" aria-hidden="true"><br>I still have a lot to work on but there is a few completed pages;</p>
+     </div>
+     <nav class="idkk" style="text-align: center; width: 625px; padding-top: 35px;">
+      <h1 style="font-family: Halo Dek; letter-spacing: 5px; font-weight: normal; font-size: 2.1rem; text-decoration: double; text-decoration-style: wavy; color: #b53326;">Navigate thru site</h1>
+      <div id="exc" aria-hidden="true" style="position: relative; bottom: 120px;"><p id="exc-left" style="font-family: Halo Dek; font-size: 3.7rem; color: #b53326; position: relative; right: 280px; top: 10px;">!!</p><p id="exc-right" aria-hidden="true" style="font-family: Halo Dek; font-size: 3.7rem; color: #b53326; position: relative; left: 280px; bottom: 10px;">!!</p></div>
+      <div id="acc-nav" style="margin-top: -205px;">
+       <h4 style="font-family: Alehna; font-weight: normal; font-size: smaller; line-height: 10px; letter-spacing: 1.1px;">note: more coming soonnn!!</h4>
+       <!-- replace note with: Make yourself at home -->
+       <div style="word-spacing: 7px;">
+       <!-- <a href="">more about me,</a> -->
+       <!-- <a href="yapp.html">diary,</a> -->
+       <a href="linkss.html">links</a>
+       <!-- other ideas: shrines -->
+       <br>
+       <!-- <a href="">site map</a> -->
+       </div>
+      </div>
+     </nav>
+     <div id="yummy" class="idkk" style="width: 625px; text-align: center;">
+      <br><img src="Decoration/divider-angel.png" style="width: 600px; margin-bottom: 25px;" alt="">
+      <div id="stamps">
+       <img src="Stamps/static.gif" style="height: 54px;" alt="miku stamp" aria-hidden="true">
+       <img src="Stamps/popipo.png" alt="miku stamp" aria-hidden="true">
+       <img src="Stamps/gumi(1).gif" alt="gumi stamp" aria-hidden="true">
+       <img src="Stamps/gumi.gif" alt="gumi stamp" aria-hidden="true">
+       <img src="Stamps/gumi(2).gif" alt="gumi stamp" aria-hidden="true">
+       <img src="Stamps/teto.gif" style="height: 54px;" alt="teto stamp" aria-hidden="true">
+       <img src="Stamps/miku.gif" alt="miku stamp" aria-hidden="true">
+       <img src="Stamps/miku(1).gif" alt="miku stamp" aria-hidden="true">
+       <img src="Stamps/echo.gif" alt="Echo by Crusher P stamp" aria-hidden="true">
+       <img src="Stamps/emu.gif" alt="emu stamp" aria-hidden="true">
+       <img src="Stamps/mizuki.gif" style="height: 54px;" alt="mizuki stamp" aria-hidden="true">
+       <img src="Stamps/kuromi.png" alt="kuromi stamp" aria-hidden="true">
+       <img src="Stamps/melody.png" alt="melody stamp" aria-hidden="true">
+       <img src="Stamps/kuromi(1).gif" alt="kuromi stamp" aria-hidden="true">
+       <img src="Stamps/natsuki.png" alt="ddlc natsuki stamp" aria-hidden="true">
+       <img src="Stamps/sayori.png" alt="ddlc sayori stamp" aria-hidden="true">
+       <img src="Stamps/ibuki.png" alt="danganronpa ibuki stamp" aria-hidden="true">
+       <img src="Stamps/popplio.gif" alt="popplio stamp" aria-hidden="true">
+       <img src="Stamps/steven.gif" alt="steven universe stamp" aria-hidden="true">
+       <img src="Stamps/tawog.gif" alt="the amazing world of gumball stamp" aria-hidden="true">
+       <img src="Stamps/milk.gif" alt="i love milk stamp" aria-hidden="true">
+       <img src="Stamps/choc.gif" alt="people like chocolate stamp" aria-hidden="true">
+       <img src="Stamps/pizza.png" alt="i support pizza stamp" aria-hidden="true">
+       <img src="Stamps/loss.gif" alt="loss meme stamp" aria-hidden="true">
+       <img src="Stamps/piracyiscool.gif" alt="piracy is cool stamp" aria-hidden="true">
+       <img src="Stamps/cringedead.png" alt="cringe is dead stamp" aria-hidden="true">
+       <img src="Stamps/slow.gif" alt="slow internet pisses me off stamp" aria-hidden="true">
+       <img src="Stamps/flipped.png" alt="sideway stamp" aria-hidden="true">
+       <img src="Stamps/wiggly.png" alt="wiggly stamp" aria-hidden="true">
+       <img src="Stamps/squiggle.gif" alt="squiggle on a stamp stamp" aria-hidden="true">
+       <img src="Stamps/kaomoji.png" alt="kaomoji stamp" aria-hidden="true">
+       <img src="Stamps/emoticons.gif" alt="emoticons stamp" aria-hidden="true">
+       <img src="Stamps/yay.gif" alt="yay emoticon stamp" aria-hidden="true">
+       <img src="Stamps/stars.png" alt="glow stars stamp" style="height: 58.5px;" aria-hidden="true">
+       <img src="Stamps/aaaaaa.gif" alt="AaaaAAAAAa stamp" aria-hidden="true">
+       <img src="Stamps/plush.png" alt="i still sleep with plushies stamp" aria-hidden="true">
+       <img src="Stamps/paper.gif" alt="i still use paper stamp" style="height: 56px;" aria-hidden="true">
+       <img src="Stamps/silly.png" alt="yeah im silly stamp" aria-hidden="true">
+       <img src="Stamps/typos.gif" alt="i make typos stamp" aria-hidden="true">
+       <img src="Stamps/gender.png" alt="gender??????? stamp" aria-hidden="true">
+      </div>
+      <div id="blinkies">
+       <img src="Blinkies/imissmywifetails.gif" alt="i miss my wife tails blinkie" aria-hidden="true">
+       <img src="Blinkies/crochet.gif" style="height: 21px;" alt="hip to crochet blinkie" aria-hidden="true">
+       <a href="https://boycott.thewitness.news/target/oreo" target="_blank" aria-hidden="true"><img src="Blinkies/oreo.gif" alt="oreos" aria-hidden="true"></a>
+       <img src="Blinkies/him.gif" alt="he/him blinkie" aria-hidden="true">
+       <img src="Blinkies/sanrio.gif" alt="sanrio blinkie" aria-hidden="true">
+       <img src="Blinkies/catperson.gif" alt="im a cat person blinkie" aria-hidden="true">
+       <img src="Blinkies/genders.gif" alt="there are 0 genders!! blinkie" aria-hidden="true">
+       <img src="Blinkies/math.gif" alt="math nerd blinkie" aria-hidden="true">
+       <img src="Blinkies/wtnv.gif" alt="welome to night vale blinkie" aria-hidden="true">
+       <img src="Blinkies/emoticons.gif" alt="emoticons blinkie" aria-hidden="true">
+       <img src="Blinkies/fakepng.webp" alt="i hate fake pngs blinkie" aria-hidden="true">
+       <img src="Blinkies/mamamia.gif" alt="mamma mia blinkie" aria-hidden="true">
+       <img src="Blinkies/dablinkie.gif" alt="dablinkies?! da vinki twins blinkie" aria-hidden="true">
+       <img src="Blinkies/lasagna.gif" alt="do you have any lasagna? garfeild blinkie" aria-hidden="true">
+       <img src="Blinkies/triplebaka.gif" alt="triple baka blinkie" aria-hidden="true">
+       <img src="Blinkies/faggot.gif" alt="faggot blinkie" aria-hidden="true">
+       <img src="Blinkies/sheese.gif" alt="cheese rocks blinkie" aria-hidden="true">
+       <img src="Blinkies/inprogress.gif" alt="site in progress blinkie" aria-hidden="true">
+       <img src="Blinkies/silly.gif" alt="born to be silly blinkie" aria-hidden="true">
+       <img src="Blinkies/vampires.webp" style="width: 150px;" alt="vampires will never hurt you blinkie" aria-hidden="true">
+      </div>
+      <div id="buttons" style="width: 570px;">
+       <img src="Buttons/dvd.gif" style="height: 31px;" alt="bouncing dvd button" aria-hidden="true">
+       <img src="Buttons/nyancat.gif" alt="nyan cat button" aria-hidden="true">
+       <img src="Buttons/sega-elite.gif" alt="Sega elite button" aria-hidden="true">
+       <img src="Buttons/shadow.jpg" style="height: 31px;" alt="shadow the hedgehog game button" aria-hidden="true">
+       <img src="Buttons/mesmiku.gif" alt="mesmerizer miku button" aria-hidden="true">
+       <img src="Buttons/mesteto.gif" alt="mesmerizer teto button" aria-hidden="true">
+       <img src="Buttons/approved.gif" alt="miku approved site button" aria-hidden="true">
+       <img src="Buttons/vocaloid.jpg" alt="vocaloid now! button" aria-hidden="true">
+       <a href="https://hodgepodgeaudio.com/#bodycode" target="_blank" aria-hidden="true"><img src="Buttons/fua.png" style="height: 31px;" alt="body code based on the podcast SCP Find Us Alive that says 'i love my wife', made by me, button" aria-hidden="true"></a>
+       <img src="Buttons/badapple.gif" alt="bad apple button" aria-hidden="true">
+       <img src="Buttons/ringdingdong.gif" alt="Ring Ding Dong by Shinee button" aria-hidden="true">
+       <img src="Buttons/queer.png" alt="you're telling me a queer coded this? button" aria-hidden="true">
+       <img src="Buttons/bestviewedondesktop.gif" alt="best viewed on desktop button" aria-hidden="true">
+       <img src="Buttons/chrome.gif" alt="viewed with chrome button" aria-hidden="true">
+       <a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank" aria-hidden="true"><img src="Buttons/freepalestine.gif" alt="free palestine now button" aria-hidden="false"></a>
+       <img src="Buttons/neocities.gif" alt="neocities button" aria-hidden="true">
+       <img src="Buttons/css.gif" alt="css is difficult button" aria-hidden="true">
+       <img src="Buttons/handcoded.gif" alt="completely hand coded button" aria-hidden="true">
+      </div>
+      <!-- note -->
+      <p style="font-size: small; line-height: 20px;">note: even though there's an oreo blinkie for decoration above, I do not support buying boycotted products.</p>
+     </div>
+     <div id="guestbook">
+     <img src="Decoration/divider-angel.png" style="width: 600px; margin-bottom: 30px; margin-top: 370px;" alt="">
+     <iframe src="https://miizzuuu.atabook.org/" title="guestbook" style="width: 600px; height: 661px; margin: auto;" aria-hidden="true"></iframe>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.1rem;">
+       <p style="line-height: normal">Having trouble with guestbook above? Try a</p><a target="_blank" href="https://miizzuuu.atabook.org/" style="line-height: normal; position: relative; top: 19px; right: 10px;">direct link<img src="Decoration/newtab.webp" style="width: 15px; filter: invert(100%); position: relative; bottom: 7px;"></a>
+      </div>
+     </div>
+     <img src="Decoration/mizuena.png" style="width: 127px; position: relative; top: 1560px; left: 620px;" alt="mizuki and ena" aria-hidden="true">
+     <img src="Decoration/fakead.gif" style=" position: relative; top: 1360px; right: 720px;" title="fake ad" aria-hidden="true">
+    </main>
+    <aside id="left" style="text-align: center;">
+     <p style="margin: 160px auto 10px auto; font-family: Halo Dek; letter-spacing: 5.5px; font-size: 1.32rem; background-color: rgba(255, 204, 102, 0.12); width: fit-content;">Mizu's updatess</p>
+     <div id="updates" class="scroll-blue" aria-hidden="true">
+      <script src="https://embeds.rss2html.net/embed.js?url=https%3A%2F%2Faa-aa-mic-test.neocities.org%2Fding-dong.xml&amp;embed_default_styles=0&amp;embed_render_copy_link=0&amp;embed_render_title=0&amp;feed_render_image=0&amp;feed_render_link=0&amp;feed_render_description=0&amp;item_render_link=0&amp;item_title_link_open_new_tab=0&amp;item_render_body=0&amp;embed_title_tag=h6&amp;item_title_tag=h5"></script>
+     </div>
+     <a href="https://aa-aa-mic-test.neocities.org/ding-dong.xml"><img src="Buttons/valid-rss.png" style="margin-top: 10px;" alt="valid rss (links to my rss feed)"></a>
+     <div id="status">
+      <!-- <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=_miizzuu" defer></script> -->
+      <script src="https://embeds.rss2html.net/embed.js?url=https%3A%2F%2Fstatus.cafe%2Fusers%2F_miizzuu.atom&amp;embed_default_styles=0&amp;embed_render_copy_link=0&amp;embed_title_replacement=status.cafe&amp;feed_render_image=0&amp;feed_render_description=0&amp;item_render_link=0&amp;item_title_link_open_new_tab=0&amp;item_render_body=0&amp;item_published_label=&amp;item_published_format=%25b+%25e+%25R+%25Y+%25z&amp;embed_tag=section&amp;embed_title_tag=h2&amp;item_title_tag=h3"></script>
+     </div>
+     <p style="color: #c6c6bb; text-align: left; font-size: smaller">^ some status may not fully show, visit my profile to properly read</p>
+    </aside>
+    <aside id="right">
+     <div id="weather-history" style="min-width:230px; width:230px; height:195px; display: block; margin: auto; margin-top: 70px; border: 3px #8A0E02; border-style: dotted; border-right: hidden; transform: rotate(1deg); overflow-y: scroll;">
+      <mark aria-hidden="false">~ Weather history ~</mark>
+      <ul>
+       <li aria-hidden="fale">(Current song) Like this (이렇게) - Nastyona (Dec 4th, 2025)</li>
+       <li aria-hidden="false">(2nd most recent song) Le Ciel - Malice Mizer (Sep 10th, 2025)</li>
+       <li aria-hidden="true">The Last Pharaoh - Joruzin ft. Hatsune Miku (Aug 24th, 2025)</li>
+       <li aria-hidden="true">Soap - Yves ft. PinkPantheress (Aug 10th, 2025)</li>
+       <li aria-hidden="true">The Vapor Chariot - Hatesex (Jul 3rd, 2025)</li>
+       <li aria-hidden="true">Caffeine Zombie - Old Cat's Drama (Jun 15th, 2025)</li>
+       <li aria-hidden="true">My September - Nastyona (Jun 12th, 2025)</li>
+      </ul>
+     </div>
+     <div id="webrings" style="margin: 270px auto auto auto; width: 230px; min-width: 230px; height: 240px; max-height: 240px; padding: 6px; overflow-y: scroll; overflow-x: hidden; text-align: center; background-color: rgba(138, 14, 2, 0.13); transform: rotate(-1deg); border: double #8A0E02 5px; border-right: hidden;">
+      <h3 style="text-decoration: double underline;">Webringssssss</h3>
+      <h5>Vocaloid ring</h5>
+      <div id="vocaring" class="small" style="background-color: white; border-radius: 10px; margin-bottom: 30px;" aria-hidden="true">
+       <script src="https://electric-tenshi.nekoweb.org/vocaring/vocaring-variables.js"></script>
+       <script src="https://electric-tenshi.nekoweb.org/vocaring/vocaring-widget.js"></script>
+      </div>
+      <h5>No AI ring</h5>
+       <map name="noaimini4b" aria-hidden="true">
+       <area href="https://baccyflap.com/noai" shape="rect" coords="44,6,126,34" target="_blank" alt="no ai webring" title="no ai webring" aria-hidden="true">
+       <area href="https://baccyflap.com/noai/?prv&s=mzu" target="_top" shape="poly" coords="0,30,20,10,36,10,36,50,20,50" alt="previous" title="previous" aria-hidden="true">
+       <area href="https://baccyflap.com/noai/?nxt&s=mzu" target="_top" shape="poly" coords="174,30,154,10,138,10,138,50,154,50" alt="next" title="next" aria-hidden="true">
+       </map>
+       <img style="width:176px;image-rendering:pixelated; filter: saturate(64%);" usemap="#noaimini4b" src="https://baccyflap.com/noai/miniwidget4.gif" alt="a pink rounded rectangle with soft red borders. in the centre is the text NO AI / WEB / RING and to either side are two hearts, changing colour from white to red to pink">
+      <h5>Rhythm games (general) ring</h5>
+       <div class = "webWidget6" style="margin: 20px auto 20px auto;" aria-hidden="true">
+        <img src = "https://julieyess.neocities.org/rhythmwebring/webDance.png" height = "40px">  <br>
+        <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring?miizzuu-previous">←</a>
+        <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring?miizzuu-random">Random</a>
+        <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring">Home</a>
+        <a href="https://julieyess.neocities.org/rhythmwebring/rhythmgamewebring?miizzuu-next">→</a>
+       </div> 
+      <h5>Rhythm heaven ring</h5>
+      <div id="heaven" aria-hidden="true"><script src="http://maddycha.com/rhythm-ring/js/rhythmring.js" type="text/javascript"></script></div>
+      <h5>Transmasc ring</h5>
+       <link rel="stylesheet" href="https://goooby.neocities.org/onionring.css" aria-hidden="true">
+       <div id="transmasc_ring" aria-hidden="true">
+       <script type="text/javascript" src="https://goooby.neocities.org/onionring-variables.js"></script>
+       <script type="text/javascript" src="https://goooby.neocities.org/onionring-widget.js"></script>
+       </div>
+      <h5>Silly ring</h5>
+       <div id="sillyringg" aria-hidden="true" style="margin-top: 20px; text-decoration: none;"><script src="https://silly.possiblyaxolotl.com/ring/webstring.js"></script></div>
+      <h5>GFDKWTFAW</h5>
+       <div id='gfdkris' aria-hidden="true"> 
+        <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-variables.js"></script>
+        <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-widget.js"></script>
+       </div>
+      <h5>goth music</h5>
+       <div id='goth-music' aria-hidden="true">
+        <script type="text/javascript" src="https://eggmothsoup.neocities.org/onionring-variables.js"></script> 
+        <script type="text/javascript" src="js-idk/onionring-widget.js"></script>
+      </div>
+       <h4>Pending:</h4>
+      <h5>catfolk ring :3</h5>
+       <div aria-hidden="true"><script src="https://snewberry.neocities.org/catfolk/webstring.js"></script></div>
+      <h5>homebrew ring</h5>
+       <div aria-hidden="true"><script src="https://homebrew.cresentri.com/webring.js" data="Wii"></script></div>
+      <h5>nyan cat ring</h5>
+       <div id="NYAN_" aria-hidden="true">
+        <script type="text/javascript" src="https://epiccity.nekoweb.org/ring/onionring-variables.js"></script>
+        <script type="text/javascript" src="https://epiccity.nekoweb.org/ring/onionring-widget - small.js"></script>
+       </div>
+      <h5>webmaster ring</h5>
+       <div id="wwbtn" aria-hidden="true">
+        <a href="https://webmasterwebring.netlify.app"><img src="https://file.garden/ZrZSgsrYfQXsO7QH/ww/50x50.png"></a><br><a href="https://webmasterwebring.netlify.app?miizzuu-previous">prev</a> <a href="https://webmasterwebring.netlify.app?miizzuu-random">?</a> <a href="https://webmasterwebring.netlify.app?miizzuu-next">next</a>
+       </div>
+      <h5>autistbh</h5>
+      <div aria-hidden="true"><script src="https://autistbh.neocities.org/webring/webringrainbowgif.js"></script><ring-114 site="https://AUTISM.neocities.org/"></ring-114></div>
+     </div>
+     <div id="fanlists" style="margin: 10px auto auto auto; width: 230px; min-width: 230px; height: 240px; max-height: 240px; padding: 6px; overflow-y: scroll; background-color: rgba(138, 14, 2, 0.13); transform: rotate(1deg); border: double #8A0E02 5px; border-right: hidden;" aria-hidden="true">
+      <div id="cliques">
+       <a target="_blank" href="https://cliques.shadow-lord.com/cats/list.php"><img src="fanlist/cat.png" style="height: 50px;"></a>
+       <a target="_blank" href="https://hotchocolate.i-heart-you.net/"><img src="fanlist/hotchoco.gif"></a>
+       <a target="_blank" href="https://fanique.altervista.org/emoticons/list.php"><img src="fanlist/smile.png"></a>
+       <a target="_blank" href="https://fanlistings.melankorin.net/vocaloid/"><img src="fanlist/gumi.png"></a>
+       <a target="_blank" href="https://fanlistings.melankorin.net/vocaloid/"><img src="fanlist/teto.png"></a>
+       <a target="_blank" href="http://imaginary.nu/tails/"><img src="fanlist/tails.gif"></a>
+       <a target="_blank" href="http://hellokitty.ravenbeauty.net/mymelody"><img src="fanlist/melody.png"></a>
+       <a target="_blank" href="http://hellokitty.ravenbeauty.net/kuromi/"><img src="fanlist/kuromi.png"></a>
+       <a target="_blank" href="http://sakura.nu/doki/index.php"><img src="fanlist/natsuki.png"></a>
+       <a target="_blank" href="https://silent.am/playlists/about.php"><img src="fanlist/playlists.png"></a>
+       <a target="_blank" href="https://eien-melody.net/mulan/index.php"><img src="fanlist/mulan.png"></a>
+      </div>
+      <p style="letter-spacing: -2px; color: rgba(138, 14, 2, 0.37);">~~~~~~~~~~~~~~~~~~~~~~~</p>
+      <div id="text">
+       <p style="text-transform: lowercase;"><a traget="_blank" href="https://reef.kingdra.net/">kart</a> <span style="display: inline-block; padding: 0 2px;"><img src="fanlist/shroom.png" height="15" style="image-rendering: pixelated;"></span> toad</p>
+       
+      </div>
+     </div>
+     <!-- <div id="sudoku" style="overflow: hidden; margin: 300px auto auto auto; width: 230px; min-width: 230px; height: 270px; padding: 6px; overflow-y: auto; text-align: center; background-color: rgba(138, 14, 2, 0.13); border: #8A0E02 5px groove; border-bottom: #8A0E02 3px dashed; border-radius: 7px;" aria-hidden="true">
+      <div id="sud-starter-1-widget" style="position: relative; top: 25px; left: 25px;"></div>
+      <script type="text/javascript" src=""></script>
+      <script type="text/javascript">showPuzzle('sud-starter-1-widget');</script>
+     </div>
+     <div id="nonogram" style="overflow: hidden; margin: 10px auto auto auto; width: 230px; min-width: 230px; height: 270px; padding: 6px; overflow-y: auto; text-align: center; background-color: rgba(138, 14, 2, 0.13); border: #8A0E02 5px groove; border-top: #8A0E02 3px dashed; border-radius: 7px;" aria-hidden="true">
+      <div id="pap-starter-2-widget" style="position: relative; top: 25px; left: 25px;"></div>
+      <script type="text/javascript" src=""></script>
+      <script type="text/javascript">showPuzzle('pap-starter-2-widget');</script>
+     </div> -->
+    </aside>
+    <div id="bgmusic" aria-hidden="true">
+      <div id="glenplayer02">
+      <div class="music-controls" onclick="songstart();">
+       <div class="playy">d</div>
+       <div class="pausee">k</div>
+      </div>
+      <div class="sonata" style="position: relative; left: 8px;">Just a rag dolly bg music</div>
+      <div class="labeltext"><img src="https://64.media.tumblr.com/tumblr_ll7wpyHlj71qi6qow.gif" style="position: relative; left: 24px;"><span style="font-family: 'music'; font-size: 1.1em; color: #8A0E02; -webkit-text-stroke: 0.5px #000; margin-top: -0.2em; margin-bottom: 0.1em; position: relative; left: 37px;">o</span></div>
+     </div>
+     <audio id="tune" src="https://files.catbox.moe/dpdsi3.mp3" type="audio/mpeg"></audio>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,16 @@
+a:link{
+color: #EFDBEF;
+text-decoration: underline;
+text-decoration-style: wavy;
+text-decoration-color: #EFDBEF;
+}
+a:visited{
+text-decoration: underline;
+text-decoration-style: wavy;
+text-decoration-color: #c6c6bb;
+color: #c6c6bb;
+}
+a:hover{
+text-decoration: none;
+color: #FFFEF2;
+}

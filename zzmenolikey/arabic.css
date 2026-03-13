@@ -1,0 +1,23 @@
+@font-face{
+font-family: 'Arslan';
+src: url(Fonts/Arslan-Wessam/a-arslan-wessam-a.ttf);
+}
+html{
+ font-family: Arslan;
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+h1{
+ font-size: 50px;
+ text-align: left;
+ margin: 0 auto -20px 0;
+ width: 140px;
+}
+p{
+ font-size: x-large;
+ text-align: right;
+}
+::-webkit-scrollbar{width: 8px;}
+::-webkit-scrollbar-track{background: #807279; border: hidden; border-radius: 7px;}
+::-webkit-scrollbar-thumb{background: #000000; border: hidden; border-radius: 7px;}
+::-webkit-scrollbar-thumb:hover{background: #6E4555}

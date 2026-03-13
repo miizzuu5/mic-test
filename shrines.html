@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- hey you! whatchu doing here?! there's nothing to look at -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S-S-S-SHRINES !!!!!</title>
+  <link href="/meow.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+   ::-webkit-scrollbar{width: 8px;}
+   ::-webkit-scrollbar-track{background: #5b4c5f; border: hidden; border-radius: 2px;}
+   ::-webkit-scrollbar-thumb{background: #e1b5df; border: hidden; border-radius: 7px;}
+   @font-face {
+   font-family: 'Halo Dek';
+   src: url(Fonts/Halo-dek/halo_dek-webfont.woff);
+   }
+   @font-face {
+   font-family: 'Alehna';
+   src: url(Fonts/Alehna/alehna-webfont.woff);
+   }
+   body{
+    background: url(Backgrounds/black.png);
+    text-align: center;
+    font-family: 'Alehna';
+    letter-spacing: 1.1px;
+    font-size: 20px;
+   }
+   @keyframes shrINe{
+    0% {box-shadow: none; scale: 1;}
+    100% {scale: 1.02; box-shadow: 0px 0px 80px rgba(220, 175, 217, 0.54);}
+   }
+   @keyframes shrOUT{
+    from {scale: 1.02; box-shadow: 0px 0px 80px rgba(220, 175, 217, 0.54);}
+    to {box-shadow: none; scale: 1;}
+   }
+   .glow:hover{
+    animation-duration: 0.5s;
+    animation-name: shrINe;
+    animation-fill-mode: forwards;
+   }
+   .glow:not(:hover){
+    animation-name: shrOUT;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+   }
+   .glow{
+    width: 1020px;
+    height: 360px;
+    margin: auto auto 50px auto;
+   }
+   .glow img{
+    width: 1020px;
+   }
+   .glow p{
+    position: relative;
+    bottom: 54px;
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.23);
+    line-height: 30px;
+   }
+  </style>
+ </head>
+  <body>
+   <header>
+    <iframe title="header" src="header.html" width="1020px" height="30px;" style="display: block; margin: auto; overflow: hidden; border: hidden;"></iframe>
+   </header>
+   <div style="margin-top: 70px;">
+    <div class="glow"><a href="Shrines/sammyverse.html"><img src="Shrines/Sammyverse/trio-pfp.png"></a><p>~ Sammyverse</p></div>
+   </div>
+  </body>
+</html>
