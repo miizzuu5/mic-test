@@ -4,10 +4,10 @@ body{
  font-size: 20px;
 }
 a:link{
- color: #8A0E02;
+ color: #b53326;
  text-decoration: underline;
  text-decoration-style: wavy;
- text-decoration-color: #8A0E02;
+ text-decoration-color: #b53326;
 }
 a:visited{
  text-decoration: underline;
