@@ -1,16 +1,83 @@
 a:link{
-color: #EFDBEF;
-text-decoration: underline;
-text-decoration-style: wavy;
-text-decoration-color: #EFDBEF;
+ color: #EFDBEF;
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: #EFDBEF;
 }
 a:visited{
-text-decoration: underline;
-text-decoration-style: wavy;
-text-decoration-color: #c6c6bb;
-color: #c6c6bb;
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: #c6c6bb;
+ color: #c6c6bb;
 }
 a:hover{
-text-decoration: none;
-color: #FFFEF2;
+ text-decoration: none;
+ color: #FFFEF2;
+}
+
+header{
+ margin: auto;
+ width: 1020px; 
+ height: 30px; 
+ background-color: rgba(247, 227, 247, 0.66);
+ display: flex;
+ justify-content: space-around;
+}
+header a:link{
+ color: black;
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: black;
+}
+header a:visited{
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: black;
+ color: black;
+}
+header a:hover{
+ text-decoration: none;
+ color: black;
+}
+
+::-webkit-scrollbar{width: 8px;}
+::-webkit-scrollbar-track{background: #5b4c5f; border: hidden; border-radius: 2px;}
+::-webkit-scrollbar-thumb{background: #e1b5df; border: hidden; border-radius: 7px;}
+body{
+ font-family: 'Alehna';
+ letter-spacing: 1.1px;
+ font-size: 20px;
+}
+a:link{
+ color: #EFDBEF;
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: #EFDBEF;
+}
+a:visited{
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ text-decoration-color: #c6c6bb;
+ color: #c6c6bb;
+}
+a:hover{
+ text-decoration: none;
+ color: #FFFEF2;
+}
+html{
+ background-image: url(Backgrounds/black.png);
+ color: #fffef2;
+ font-family: Alehna;
+ letter-spacing: 1.1px;
+ line-height: 25px;
+ text-align: center;
+}
+header{
+ margin: 20px auto 0 auto;
+ width: 1020px;
+}
+.pur-border{
+ border: 30px solid transparent;
+ border-image: url('Decoration/purple-lace.png') 50 round;
+ padding: 25px;
 }

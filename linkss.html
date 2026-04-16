@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LINKSSS</title>
+   <link href="/meow2.css" rel="stylesheet" type="text/css" media="all">
   <link rel="icon" type="image/x-icon" href="/Pixels/favicon.ico.gif">
   <style>
    @font-face {
@@ -15,44 +16,8 @@
    font-family: 'Alehna';
    src: url(Fonts/Alehna/alehna-webfont.woff);
    }
-   ::-webkit-scrollbar{width: 8px;}
-   ::-webkit-scrollbar-track{background: #5b4c5f; border: hidden; border-radius: 2px;}
-   ::-webkit-scrollbar-thumb{background: #e1b5df; border: hidden; border-radius: 7px;}
-   body{
-    font-family: 'Alehna';
-    letter-spacing: 1.1px;
-    font-size: 20px;
-   }
-   a:link{
-    color: #EFDBEF;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: #EFDBEF;
-   }
-   a:visited{
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: #c6c6bb;
-    color: #c6c6bb;
-   }
-   a:hover{
-    text-decoration: none;
-    color: #FFFEF2;
-   }
-   html{
-    background-image: url(Backgrounds/black.png);
-    color: #fffef2;
-    font-family: Alehna;
-    letter-spacing: 1.1px;
-    line-height: 25px;
-    text-align: center;
-   }
    body{
     margin: auto;
-   }
-   header{
-    margin: 20px auto 0px auto;
-    width: 1020px;
    }
    main{
     width: 1020px;
@@ -68,11 +33,6 @@
    #meee{grid-area: meee;}
    #thxies{grid-area: thxies;}
    #sites{grid-area: sites; grid-area: span 2;}
-   #meee, #thxies, #sites{
-    border: 30px solid transparent;
-    border-image: url('Decoration/purple-lace.png') 50 round;
-    padding: 25px;
-   }
    #meee, #thxies{
     text-align: left;
    }
@@ -85,10 +45,13 @@
   </head>
   <body>
    <header>
-    <iframe title="header" src="header.html" width="1020px" height="30px;" style="display: block; margin: auto; overflow: hidden; border: hidden;"></iframe>
+    <a href="homepage.html">home</a>
+    <a href="linkss.html">links</a>
+    <a href="">blog</a>
+    <a href="shrines.html">shrines</a>
    </header>
    <main>
-   <section id="meee">
+   <section id="meee" class="pur-border">
     <h3>My profiles and stuff</h3>
     <ul id="profiles" style="width: 290px; position: relative; right: 25px;">
      <li><a href="https://neocities.org/site/aa-aa-mic-test">Neocities profile</a><br></li>
@@ -97,7 +60,7 @@
      <!-- slowly id // discord?? // pinterest?? -->
     </ul>
    </section>
-   <section id="thxies">
+   <section id="thxies" class="pur-border">
     <h3>Credits</h3>
      <strong>Fonts:</strong>
       <dl>
@@ -111,7 +74,7 @@
      <b><a target="_blank" href="https://jsfiddle.net/2b1qva65/">Music player</a> in the homepage</b><br><br>
      <a href="https://hillhouse.neocities.org/materials/borders/">Lace borders</a>
    </section>
-   <section id="sites" style="margin: auto; text-align: center; width: 940px;">
+   <section id="sites" class="pur-border" style="margin: auto; text-align: center; width: 940px;">
     <h2>Personal sites I like</h2>
      <a target="_blank" href="https://irony-machine.neocities.org/"><img src="Buttons/sites/irony-machine.png" alt="irony machine"></a>
      <a target="_blank" href="https://velvetblue.neocities.org"><img src="https://files.catbox.moe/vltthb.png" alt="velvet blue"></a>
@@ -140,7 +103,6 @@
      <a target="_blank" href="https://watcher.neocities.org/"><img src="Buttons/sites/watcher.gif"></a>
      <a target="_blank" href="https://scaremevalerine.neocities.org/"><img src="https://files.catbox.moe/hgx7nx.gif"></a>
      <a target="_blank" href="https://toasty.place" title="Toasty.place"><img src="https://toasty.place/images/buttons/sitebutton.gif"></a>
-     <a target="_blank" title="Tori's Corner!" href="https://toriii.nekoweb.org"><img alt="Tori's Corner Button" src="https://toriii.nekoweb.org/img/button.png"></a>
     <h4>No buttons</h4>
      <a target="_blank" href="https://florrie.ichi.city/"><img src="Buttons/sites/ichi-city.png" title="florrie on ichi.city"></a>
     <div id="my-button">
