@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dear diare, bich</title>
   <link href="/diary.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/x-icon" href="Pixels/notebook-pixel.gif">
+  <link rel="icon" type="image/x-icon" href="Pixels/notebook-pixel.gif">
   <script>
    function showImg() {
     document.getElementById('cat-title').style.display = "block";
@@ -54,6 +54,12 @@
    #bunny{
     animation: bunny 1.5s infinite step-start;
     animation-play-state: running;
+    
+    height: 60px;
+    position: absolute;
+    bottom: 200px; 
+    left: 300px; 
+    opacity: 0.9;
    }
    @keyframes bunny {
     0% {transform: rotate(0deg)}
@@ -65,6 +71,12 @@
    #kitty{
     animation: kitty 1.5s infinite step-start;
     animation-play-state: running;
+    
+    height: 60px; 
+    position: absolute; 
+    bottom: 120px; 
+    left: 330px; 
+    opacity: 0.9;
    }
    @keyframes kitty {
     0% {transform: rotate(0deg)}
@@ -73,9 +85,47 @@
     75% {transform: rotate(10deg)}
     100% {transform: rotate(0deg)}
    }
+   #Decoration{
+    position: relative; bottom: 525px; margin: auto; width: 800px; height: 560px;
+   }
+   #cat-title{
+    display:none;
+   }
+   #notebook{
+    width: 780px;
+    margin: auto; 
+    display: flex; 
+    position: relative; 
+    bottom: 1055px;
+   }
+   #left{
+    width: 310px;
+    position: relative; 
+    left: 80px;
+   }
+   #right{
+    position: relative;
+    left: 100px; 
+    text-align: center;
+   }
+   #archive{
+    position: relative; 
+    bottom: 30px; 
+    height: 180px;
+   }
    #entries{
     border: 30px solid transparent;
     border-image: url('Decoration/black-lace.png') 75 round;
+    background-color: rgba(245, 245, 220, 0.35); 
+    background-clip: padding-box; 
+    text-align: center; 
+    width: 141px; 
+    height: 109px; 
+    position: absolute; 
+    left: 5px;
+    top: 0; 
+    font-size: 15px; 
+    overflow-y: auto;
    }
    button{
     font-family: Alehna;
@@ -93,34 +143,38 @@
  </head>
   <body>
    <main>
-    <img src="Decoration/notebook.png" style="margin: auto; width: 780px; position: relative; top: 20px;" alt="">
-    <div id="Decoration" style="position: relative; bottom: 525px; margin: auto; width: 800px; height: 560px;">
-     <div id="cat-title" style="display:none;"><img src="Decoration/stickers/cat.png" style="height: 100px; position: absolute; right: 130px; top: 40px;" alt=""></div>
-     <img id="bunny" class="animated" src="Decoration/stickers/bunny.png" style="height: 60px; position: absolute; bottom: 150px; left: 300px; opacity: 0.9;" alt="">
-     <img id="kitty" class="animated" src="Decoration/stickers/kitty.png" style="height: 60px; position: absolute; bottom: 70px; left: 330px; opacity: 0.9;" alt="">
-     <img src="Decoration/stickers/sparkle.png" style="height: 80px; position: absolute; left: 50px; top: 10px; opacity: 0.8; transform: rotate(30deg)" alt="">
-     <img src="Decoration/stickers/snoopy-side.png" style="height: 120px; position: absolute; bottom: 20px; right: -9px; opacity: 0.9; transform: rotate(-4deg)" alt="">
+    <img src="Decoration/notebook.png" style="margin: auto; width: 780px; position: relative; top: 20px;" alt="" aria-hidden="true">
+    <div id="Decoration">
+     <div id="cat-title">
+      <img src="Decoration/stickers/cat.png" style="height: 100px; position: absolute; right: 130px; top: 40px;" alt="" aria-hidden="true">
+     </div>
+     <img id="bunny" class="animated" src="Decoration/stickers/bunny.png" alt="" aria-hidden="true">
+     <img id="kitty" class="animated" src="Decoration/stickers/kitty.png" alt="" aria-hidden="true">
+     <img src="Decoration/stickers/sparkle.png" style="height: 80px; position: absolute; left: 50px; top: 10px; opacity: 0.8; transform: rotate(30deg)" alt="" aria-hidden="true">
+     <img src="Decoration/stickers/snoopy-side.png" style="height: 120px; position: absolute; bottom: 20px; right: -9px; opacity: 0.9; transform: rotate(-4deg)" alt="" aria-hidden="true">
     </div>
-    <article id="notebook" style="width: 780px; margin: auto; display: flex; position: relative; bottom: 1055px;">
-     <section id="left" style="width: 310px; position: relative; left: 80px;">
-      <h1 style="font-family: Riot; font-size: 1.37em; width: fit-content; font-weight: normal; margin: 24px auto 0 auto;" aria-label="Diary">D-D-D-DIARYYYY!!!!</h1><p style="font-size: small;" aria-hidden="true">(-ish)</p>
-      <p style="line-height: 25px; position: relative; bottom: 18px;">Enjoy reading my occsional yapping sessions over a picutre of my actual irl notebook ^^ To toggle animation press the button above.<br>Also if you know me irl pls don't read the arabic versions thank uu</p>
-      <div id="archive" style="position: relative; bottom: 30px; height: 180px;">
-       <div id="entries" style="background-color: rgba(245, 245, 220, 0.35); background-clip: padding-box; text-align: center; width: 141px; height: 109px; position: absolute; left: 5px; top: 0; font-size: 15px; overflow-y: auto;">
+    <article id="notebook">
+     <section id="left">
+      <h1 style="font-family: Riot; font-size: 1.37em; width: fit-content; font-weight: normal; margin: 24px auto 0 auto;" aria-label="Blog!">B-B-B-B-BLOG!!!!</h1><p style="font-size: small;" aria-hidden="true">(-ish)</p>
+      <p style="line-height: 25px; position: relative; bottom: 18px;">I honestly have no idea what I'm gonna use this for? Stay tuned to see whatever I write here :P</p>
+      <div id="archive">
+       <div id="entries">
         <h3><b>all entries</b></h3>
-        <a href="/Diary/sept-2025.html" target="yap" onclick="showImg()">September 2025</a><br>
-        <a href="/Diary/sept-3rd-2025.html" target="yap" onclick="showImg()">Sep 3rd 2025</a><br>
+        <a href="" target="yap" onclick="showImg()">...</a><br>
        </div>
       </div>
+      <div id="tags">
+       <h3>tags !!</h3>
+      </div>
      </section>
-     <section id="right" style="position: relative; left: 100px; text-align: center;">
+     <section id="right">
      <iframe title="yap" name="yap" style="height: 440px; width: 260px; margin: auto; position: relative; top: 40px; border: hidden;"></iframe>
      </section>
     </article>
     <div id="temporary"><button onclick="toggleAnimation()">Toggle Animation</button></div>
-    <footer>
+    <!-- <footer>
      <a id="go-home" href="homepage.html" style="position: fixed; bottom: 10px; left: 0; background-color: rgba(255, 223, 193, 0.48); line-height: 30px; color: black;">Go back home?</a>
-    </footer>
+    </footer> -->
    </main>
   </body>
 </html>
