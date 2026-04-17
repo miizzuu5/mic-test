@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rag doll swag :fire:</title>
-  <link href="/meow.css" rel="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" href="https://electric-tenshi.nekoweb.org/vocaring/vocaring.css">
   <link rel="icon" type="image/x-icon" href="/Pixels/favicon.ico.gif" alt="">
   <script src="js-idk/jquery.min.js"></script>
@@ -32,19 +31,37 @@
    .scroll-blue::-webkit-scrollbar-track{background: #643016; border: hidden; border-radius: 2px;}
    .scroll-blue::-webkit-scrollbar-thumb{background: #e4b047; border: hidden; border-radius: 7px;}
    .scroll-blue::-webkit-scrollbar-thumb:hover{background: #c39d52}
-   html{
-    background-image: url(Backgrounds/black.png);
-    color: #FFFEF2;
-    line-height: 26px;
-    font-family: Alehna;
-    letter-spacing: 1.1px;
-   }
-   body{
-    display: grid;
-    grid-template-areas:
-     "left main right";
-    grid-template-columns: 1fr 2fr 1fr;
-   }
+     a:link{
+      color: #b53326;
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #b53326;
+     }
+     a:visited{
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      text-decoration-color: #c6c6bb;
+      color: #c6c6bb;
+     }
+     a:hover{
+      text-decoration: none;
+      color: #FFFEF2;
+     }
+     html{
+      background-image: url(Backgrounds/black.png);
+      color: #FFFEF2;
+      line-height: 26px;
+      font-family: 'Alehna';
+      letter-spacing: 1.1px;
+      font-size: 20px;
+     }
+     body{
+      padding-bottom: 50px;
+      display: grid;
+      grid-template-areas:
+       "left main right";
+      grid-template-columns: 1fr 2fr 1fr;
+     }
    #left{grid-area: left; z-index: 2;}
    main{grid-area: main; z-index: 1;}
    #right{grid-area: right; z-index: 3;}
