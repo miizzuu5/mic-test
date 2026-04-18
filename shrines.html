@@ -23,7 +23,7 @@
     text-align: center;
     font-family: 'Alehna';
     letter-spacing: 1.1px;
-    font-size: 20px;
+    font-size: 1.15rem;
    }
    @keyframes shrINe{
     0% {box-shadow: none; scale: 1;}
@@ -32,6 +32,9 @@
    @keyframes shrOUT{
     from {scale: 1.02; box-shadow: 0px 0px 80px rgba(220, 175, 217, 0.54);}
     to {box-shadow: none; scale: 1;}
+   }
+   h1{
+    margin-top: 70px;
    }
    .glow:hover{
     animation-duration: 0.5s;
@@ -56,17 +59,25 @@
     position: relative;
     bottom: 54px;
     text-align: left;
-    background-color: rgba(128, 128, 128, 0.23);
+    background-color: rgba(121, 109, 126, 0.75);
     line-height: 30px;
    }
   </style>
  </head>
   <body>
-   <header>
-    <iframe title="header" src="header.html" width="1020px" height="30px;" style="display: block; margin: auto; overflow: hidden; border: hidden;"></iframe>
+   <header aria-label="navigation bar">
+    <a href="homepage.html">home</a>
+    <a href="linkss.html">links</a>
+    <a href="yapp.html">blog</a>
+    <a href="shrines.html">shrines</a>
    </header>
-   <div style="margin-top: 70px;">
-    <div class="glow"><a href="Shrines/sammyverse.html"><img src="Shrines/Sammyverse/trio-pfp.png"></a><p>~ Sammyverse</p></div>
-   </div>
+   <main>
+    <h1>DONE</h1>
+    <p>nothing yet...</p>
+    <h1 aria-label="Work in progress">WIP<span style="font-size: xx-large">s</span></h1>
+    <div style="margin-top: 70px;">
+     <div class="glow"><a href="Shrines/sammyverse.html"><img src="Shrines/Sammyverse/trio-pfp.png" style="filter: blur(8px) brightness(80%); "></a><p>~ Sammyverse</p></div>
+    </div>
+   </main>
   </body>
 </html>
