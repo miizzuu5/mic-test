@@ -10,6 +10,21 @@
     <script src="js-idk/jquery.min.js"></script>
     <script src="js-idk/glenplayer02.js"></script>
     <script src="https://kit.fontawesome.com/8119dfca45.js" crossorigin="anonymous"></script>
+    <script>
+    // Change to whatever Project DIVA game you want. If removed, defaults to Project DIVA.
+    window.divaringGame = "Project DIVA Arcade Future Tone"; 
+
+    // Use this to change the gif into whatever image or gif you want.
+    // window.divaringImage = "IMAGE_LINK_HERE.png";
+     
+     // SIZING OPTIONS:
+     // You can add a class="" attribute next to the divaring div to resize it to a certain fixed size:
+     // - class="divaring-small"
+     // - class="divaring-large"
+
+     // EXPERT RESIZING: Or you can add an inline style to the div, something like this:
+     // style="--ring-max-width: 600px; --ring-img-width: 160px; --ring-logo-height: 110px;"
+    </script>
     <link rel="stylesheet" href="https://epiccity.nekoweb.org/ring//onionring - small.css">
     <style>
      @font-face{
@@ -340,6 +355,22 @@
      text-decoration: none;
      color: #b0afa6;
      }
+     #diva a:link{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: none;
+     text-decoration-color: #FFFEF2;
+     }
+     #diva a:visited{
+     color: #FFFEF2;
+     text-decoration: underline;
+     text-decoration-style: none;
+     text-decoration-color: #FFFEF2;
+     }
+     #diva a:hover{
+     text-decoration: none;
+     color: #b0afa6;
+     }
      #cliques{
       display: flex;
       flex-wrap: wrap;
@@ -607,6 +638,13 @@
         <script type="text/javascript" src="js-idk/onionring-widget.js"></script>
       </div>
        <h4>Pending:</h4>
+      <h5>project DIVA</h5>
+      <div id="diva" aria-hidden="true">
+       <link rel="stylesheet" href="https://first-sound.moe/divaring/divaring.css">
+       <div id="divaring" class="divaring-small"></div>
+       <script type="text/javascript" src="https://first-sound.moe/divaring/divaring-variables.js"></script>
+       <script type="text/javascript" src="https://first-sound.moe/divaring/divaring-widget.js"></script>
+      </div>
       <h5>catfolk ring :3</h5>
        <div aria-hidden="true"><script src="https://snewberry.neocities.org/catfolk/webstring.js"></script></div>
       <h5>homebrew ring</h5>
@@ -634,6 +672,7 @@
        <a target="_blank" href="http://sakura.nu/doki/index.php"><img src="fanlist/natsuki.png"></a>
        <a target="_blank" href="https://silent.am/playlists/about.php"><img src="fanlist/playlists.png"></a>
        <a target="_blank" href="https://eien-melody.net/mulan/index.php"><img src="fanlist/mulan.png"></a>
+       <a target="_blank" href="https://coool.neocities.org/rv/"><img src="fanlist/rv.png"></a> <!-- pending -->
       </div>
       <p style="letter-spacing: -2px; color: rgba(138, 14, 2, 0.37);">~~~~~~~~~~~~~~~~~~~~~~~</p>
       <div id="text">
