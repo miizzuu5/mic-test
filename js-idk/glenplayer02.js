@@ -20,6 +20,7 @@ $(document).ready(function(){
 
 function songstart() {
 var harmonia = document.getElementById("tune");
+    harmonia.loop = true;
     if (harmonia.paused) {
         harmonia.play();
     } else { 
